@@ -11,60 +11,62 @@
   ],
   "outbounds": [
     {
-    "type": "vless",
-    "tag": "111",
-    "server": "",
-    "server_port": 443,
-    "uuid": "ffffffff-ffff-ffff-ffff-ffffffffffff",
-    "flow": "",
-    "network": "tcp",
-    "tls": {
+      "type": "vmess",
+      "tag": "111",
+      "server": "",
+      "server_port": 443,
+      "uuid": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+      "alter_id": 0,
+      "security": "auto",
+      "network": "tcp",
+      "tls": {
         "enabled": true,
         "server_name": "",
         "insecure": false,
         "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
+          "enabled": true,
+          "fingerprint": "chrome"
         }
-    },
-    "packet_encoding": "packetaddr",
-    "transport": {
+      },
+      "packet_encoding": "packetaddr",
+      "transport": {
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-            "Host": [
-                ""
-            ]
+          "Host": [
+            ""
+          ]
         }
-    }
+      }
     },
     {
-    "type": "vless",
-    "tag": "222",
-    "server": "",
-    "server_port": 443,
-    "uuid": "ffffffff-ffff-ffff-ffff-ffffffffffff",
-    "flow": "",
-    "network": "tcp",
-    "tls": {
+      "type": "vmess",
+      "tag": "222",
+      "server": "",
+      "server_port": 443,
+      "uuid": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+      "alter_id": 0,
+      "security": "auto",
+      "network": "tcp",
+      "tls": {
         "enabled": true,
         "server_name": "",
         "insecure": false,
         "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
+          "enabled": true,
+          "fingerprint": "chrome"
         }
-    },
-    "packet_encoding": "packetaddr",
-    "transport": {
+      },
+      "packet_encoding": "packetaddr",
+      "transport": {
         "type": "ws",
         "path": "/?ed=2560",
         "headers": {
-            "Host": [
-                ""
-            ]
+          "Host": [
+            ""
+          ]
         }
-    }
+      }
     },
     {
       "type": "urltest",
